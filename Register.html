@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0%;
+        padding: 0%;
+        overflow: hidden;
+        /* background-color: rgb(245, 163, 245); */
+        background: linear-gradient(45deg, #FFCFCF, #d1afe6);
+
+    }
+
+    li {
+        float: right;
+    }
+
+    .li {
+        float: left;
+        display: block;
+        text-decoration: none;
+        padding: 2px;
+        color: rgb(114, 5, 5);
+
+    }
+
+    li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+        color: rgb(114, 5, 5);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .form-container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: xx-large;
+        color: brown;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 10px;
+        vertical-align: top;
+        font-size: 14px;
+    }
+
+    label {
+        font-size: large;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 15px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 25px;
+        background-color: #f58a8a;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    div:hover {
+        box-shadow: 0px 5px 7px gray;
+        transform: scale(1.02);
+    }
+
+    button:hover {
+        background-color: #f16363;
+    }
+
+    footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        background: linear-gradient(45deg, #FFCFCF, #d1afe6);
+        padding: 15px;
+        margin: 1px;
+        text-align: center;
+        overflow: hidden;
+        color: rgb(114, 5, 5);
+    }
+</style>
+
+<body>
+    <ul>
+        <big><big><b>
+                    <li class="li"> <img src="./icon/icons8-ice-cream-sundae-50.png" alt="" width="30px" height="30px">
+                        Ice-Cream World</li>
+                    <li><a href="contact1.html"><img src="./icon/icons8-contact-us-24.png" alt="" width="17"
+                                height="17">Contact Us </a></li>
+                    <li><a href="Menu.html"><img src="./icon/icons8-menu-50.png" alt="" width="18" height="18"> Menu
+                        </a></li>
+                    <li><a href="Register.html"><img src="./icon/icons8-user-24.png" alt="" width="17" height="17">
+                            Register</a></li>
+                    <li><a href="About.html"><img src="./icon/icons8-about-us-64.png" alt="" width="17" height="17">
+                            About Us </a></li>
+                    <li><a href="index.html"><img src="./icon/icons8-home-24.png" alt="" width="17" height="17"> Home
+                        </a></li>
+            </big></big></b>
+    </ul>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Address</label></td>
+                    <td>
+                        <textarea rows="3" cols="60" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Register Now</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <footer>
+        <center> @copy Rights 2025 Cooking Policy</center> <br>
+        <img src="./icon/icons8-facebook-50.png" alt="">
+        <img src="./icon/icons8-instagram-logo-50.png" alt="">
+        <img src="./icon/icons8-twitter-50.png" alt="">
+    </footer>
+</body>
+
+</html>
